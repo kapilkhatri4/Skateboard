@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ultra', serif;
+  font-family: 'Courgette', cursive;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 100% !important;
+  margin: auto;
+  padding: 0px 30px;
+}
+
+nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 1fr 1fr 10%;
+      grid-template-columns: 10% 1fr 1fr 10%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  z-index: 1005;
+}
+
+nav .logo {
+  font-size: 30px;
+  color: #510077;
+  padding: 10px;
+  font-family: 'Courgette', cursive;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+nav .navigation {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+nav .navigation .list-item {
+  display: inline-block;
+  padding: 20px;
+}
+
+nav .navigation .list-item .list-link {
+  text-decoration: none;
+  color: #000;
+  padding-bottom: 5px;
+}
+
+nav .navigation .list-item .list-link:hover {
+  border-bottom: 2px solid #510077;
+}
+
+.navhide {
+  background-color: transparent;
+  color: #510077;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.navback {
+  background-color: rgba(216, 149, 255, 0.568);
+  color: white !important;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.header {
+  height: 100vh;
+  padding-top: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .mainHeading {
+  width: 50%;
+}
+
+.header .mainHeading h3 {
+  font-family: 'Courgette', cursive;
+  font-size: 40px;
+  color: #510077;
+}
+
+.header .mainHeading h1 {
+  font-family: 'Courgette', cursive;
+  font-size: 90px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #510077;
+  fill: transparent;
+  color: transparent;
+  text-transform: uppercase;
+}
+
+.header .mainHeading h1 span {
+  margin: -10px;
+}
+
+.header .mainHeading .hero-info {
+  padding-right: 40px;
+}
+
+.header .mainHeading .hero-info P {
+  margin: 30px 0px;
+}
+
+.header .mainHeading .hero-info .booknowbtn {
+  margin-top: 20px !important;
+  background-color: #510077;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.header .hero-img {
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+.header .hero-img img {
+  position: absolute;
+  width: 200px;
+  top: 0;
+}
+
+.header .hero-img img:nth-child(1) {
+  top: 0;
+  left: 20%;
+  width: 150px;
+}
+
+.header .hero-img img:nth-child(2) {
+  top: 10%;
+  right: 10%;
+  width: 150px;
+}
+
+.header .hero-img img:nth-child(3) {
+  left: 45%;
+  z-index: 1000;
+}
+
+.header .hero-img img:nth-child(4) {
+  top: 50%;
+  width: 450px;
+  left: 25%;
+}
+
+#about {
+  height: 100vh;
+  padding-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+#about .about-info {
+  max-width: 50%;
+  height: auto;
+}
+
+#about .about-info .aboutHead {
+  font-size: 40px;
+  font-family: 'Courgette', cursive;
+  color: #510077;
+  margin-bottom: 20px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #510077;
+  fill: transparent;
+  color: transparent;
+}
+
+#about .about-info .info-img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#about .about-info .info-img img {
+  width: 100%;
+}
+
+#about .about-info .about-details {
+  max-width: 400px;
+}
+
+#about .roller-img {
+  width: 50%;
+}
+
+#about .roller-img .aboutback {
+  z-index: 1005;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

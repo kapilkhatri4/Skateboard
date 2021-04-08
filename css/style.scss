@@ -1,0 +1,191 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$black: #000;
+$whiite: #fff;
+$main-color: rgb(81, 0, 119);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+body{
+    font-family: 'Ultra', serif;
+    font-family: 'Courgette', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+.container{
+    width: 100%!important;
+    margin: auto;
+    padding: 0px 30px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 10% 1fr 1fr 10%;
+    align-items: center;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: fixed;
+    top: 0;
+    background-color: $whiite;
+    z-index: 1005;
+    .logo{
+        font-size: 30px;
+        color: $main-color;
+        padding: 10px;
+        font-family: 'Courgette', cursive;
+        grid-column: 2/3;
+    }
+    .navigation{
+        justify-self: end;
+        .list-item{
+            display: inline-block;
+            padding: 20px;
+
+           
+            .list-link{
+                text-decoration: none;
+                color: #000;
+                padding-bottom:5px ;
+                &:hover{
+                    border-bottom: 2px solid $main-color;
+                   
+                }
+            }
+        }
+    }
+    
+}
+.navhide{
+    background-color: transparent;
+    color: $main-color;
+    transition: all .3s ease;
+    
+}
+.navback{
+    background-color:rgba(216, 149, 255, 0.568);
+    color: white!important;
+    transition: all .3s ease;
+    
+}
+// herosection
+.header{
+    height: 100vh;
+    padding-top: 200px;
+    display: flex;
+    .mainHeading{
+        width: 50%;
+        h3{
+            font-family: 'Courgette', cursive;
+            font-size: 40px;
+            color: $main-color;
+        }
+        h1{
+            font-family: 'Courgette', cursive;
+            font-size: 90px;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: $main-color;
+            fill: transparent;
+            color: transparent;
+            text-transform: uppercase;
+            span{
+                margin: -10px;
+            }
+        }
+        .hero-info{
+            padding-right: 40px;
+            P{
+                margin: 30px 0px;
+            }
+            .booknowbtn{
+                margin-top: 20px!important;
+                background-color: $main-color;
+                padding: 10px 20px;
+                color: $whiite;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
+    }
+    .hero-img{
+        width: 50%;
+        position: relative;
+        text-align: center;
+        img{
+            position: absolute;
+           width: 200px;
+           top: 0;
+           &:nth-child(1){
+               top: 0;
+               left: 20%;
+               width: 150px;
+           }
+           &:nth-child(2){
+            top: 10%;
+            right: 10%;
+            width: 150px;
+            }
+            &:nth-child(3){
+                
+                left: 45%;
+                z-index: 1000;
+                }
+                &:nth-child(4){
+                    top: 50%;
+                    width: 450px;
+                    left: 25%;
+                }
+        }
+    }
+}
+
+// about
+#about{
+    height: 100vh;
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    .about-info{
+        max-width: 50%;
+        height: auto;
+        .aboutHead{
+            font-size: 40px;
+            font-family: 'Courgette', cursive;
+            color: $main-color;
+            margin-bottom: 20px;
+            -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: $main-color;
+        fill: transparent;
+        color: transparent;
+        }
+        .info-img{
+            width: 400px;
+            height: 250px;
+            border-radius: 10%;
+            object-fit: fill;
+            overflow: hidden;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+            }
+        }
+        .about-details{
+            max-width: 400px;
+        }
+    }
+    .roller-img{
+        width: 50%;
+        
+        .aboutback{
+        z-index: 1005;
+          width: 100%;
+        }
+     
+        
+    }
+}
